@@ -1,13 +1,17 @@
 ---
-title: "Exchange Currencies in Your YiPex Fiat Wallet"
+title: "Currency Exchange in Your YiPex Fiat Wallet Explained"
 sidebarTitle: "Currency Exchange"
 description: "Exchange between 21 fiat currencies in real time from your YiPex Fiat Wallet — get a live quote, confirm before the timer expires, and track the result."
 ---
 
-YiPex supports real-time exchange between 21 fiat currencies directly within your Fiat Wallet. You can swap from any supported currency balance to another in just a few steps. The rate shown while you are entering amounts is a reference only — the actual executed rate is locked at the moment you confirm the exchange.
+YiPex supports real-time exchange between 21 fiat currencies directly within your Fiat Wallet. You can swap from any supported currency balance to another in just a few steps. The rate shown while you are entering amounts is a reference estimate only — the actual executed rate is locked in at the moment you confirm the exchange, not before.
+
+<Note>
+  YiPex provides services exclusively to non-mainland-China and non-US entities. Screenshots in this guide reflect test-environment data; always refer to the live product for actual figures and features.
+</Note>
 
 <Info>
-  Exchange rates are real-time and can move between the moment you enter an amount and the moment you confirm. The estimated buy amount displayed is a preview based on the current reference rate. Your actual settled amount is determined by the rate at execution, which is locked when you click **Initiate Exchange**.
+  Exchange rates move in real time. The estimated buy amount displayed as you enter figures is a preview based on the current reference rate. Your actual settled amount is determined by the live rate at execution, which is locked when you click **Initiate Exchange** — not when you first enter your sell amount.
 </Info>
 
 ## Steps to Exchange
@@ -26,24 +30,20 @@ YiPex supports real-time exchange between 21 fiat currencies directly within you
   </Step>
 
   <Step title="Enter the sell amount">
-    Type in the amount you want to sell. YiPex automatically retrieves the current reference rate and displays an estimated buy amount. This figure is a preview only and will be confirmed at the next step.
+    Type in the amount you want to sell. YiPex automatically retrieves the current reference rate and displays an estimated buy amount. This figure is a preview only; the rate has not been locked yet.
   </Step>
 
   <Step title="Request a live quote">
-    Click **Request Quote** to fetch the latest live rate. A confirmation page opens showing the exact sell amount, the estimated buy amount, the currency pair, and the current rate.
+    Click **Request Quote** to fetch the latest live rate. A confirmation page opens showing the exact sell amount, the estimated buy amount, the currency pair, and the current rate — along with a countdown timer indicating how long that quoted rate remains valid.
   </Step>
 
   <Step title="Confirm and initiate the exchange">
-    Review all details carefully — sell amount, buy amount, currencies, and rate. A countdown timer is shown next to the quoted rate. Click **Initiate Exchange** before the timer expires to lock in the rate and complete the exchange.
+    Review all details carefully — sell amount, buy amount, currencies, and rate. Click **Initiate Exchange** before the countdown timer expires to lock in the rate and complete the exchange. If the timer runs out before you confirm, request a new quote.
   </Step>
 </Steps>
 
-After initiating the exchange, you can track its status in **Recent Transactions** on the home page or in the **Fiat Wallet Ledger**.
+After initiating the exchange, track its status in **Recent Transactions** on the home page or in the **Fiat Wallet Ledger**.
 
 <Warning>
   Once you click **Initiate Exchange**, the transaction cannot be reversed. Double-check the sell amount, buy amount, and both currency selections before you confirm.
 </Warning>
-
-<Note>
-  YiPex provides its global trade settlement services exclusively to entities that are not incorporated or resident in mainland China or the United States. Screenshots shown in this guide reflect YiPex test-environment data; always refer to the live product for actual figures and features.
-</Note>

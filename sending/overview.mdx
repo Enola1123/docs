@@ -1,10 +1,14 @@
 ---
-title: "Sending Payments and Withdrawals with YiPex"
+title: "YiPex Sending Funds: Four Payment Methods Explained"
 sidebarTitle: "Overview"
-description: "YiPex offers four outgoing payment methods — stablecoin, global fiat, withdrawal, and crypto express payout — to fit every cross-border trade scenario."
+description: "Compare stablecoin, global fiat, withdrawal, and crypto express payout methods to choose the right outgoing payment path for your trade."
 ---
 
 YiPex offers four outgoing payment methods designed to cover the full range of cross-border trade scenarios. Whether you are settling a stablecoin invoice, paying a foreign supplier via SWIFT, repatriating funds to your own company bank account, or converting crypto directly to fiat in a single step, YiPex has a path that fits your workflow.
+
+<Note>
+YiPex provides services exclusively to non-mainland-China and non-US entities. Screenshots in this guide reflect test-environment data; always refer to the live product for exact details.
+</Note>
 
 <CardGroup cols={2}>
   <Card title="Stablecoin Payment" icon="coins" href="/sending/stablecoin-payment">
@@ -25,13 +29,13 @@ YiPex offers four outgoing payment methods designed to cover the full range of c
 
 | Method | Source Wallet | Destination | Notes |
 |---|---|---|---|
-| **Stablecoin Payment** | Crypto wallet | External blockchain address | Recipient address must be pre-approved |
-| **Global Payment** | Fiat wallet | Any bank worldwide via SWIFT or local network | Supports USD and CNH |
+| **Stablecoin Payment** | Crypto wallet | External blockchain address | Recipient address must be pre-approved and show "Available" status |
+| **Global Payment** | Fiat wallet | Any bank worldwide via SWIFT or local network | Supports USD and CNH; local network available in 22 countries |
 | **Withdrawal** | Fiat wallet | Your company's own same-name bank account | No trade documentation required at account setup |
-| **Crypto Express Payout** | Crypto wallet | Fiat bank account (direct settlement) | Eligible merchants only |
+| **Crypto Express Payout** | Crypto wallet | Fiat bank account (direct settlement) | Eligible merchants only; rate locked at confirmation |
 
 ## Security Requirements for All Outgoing Payments
 
 <Note>
-Every outgoing payment on YiPex requires you to enter your **transaction password** before it can be submitted. If your super-admin has enabled the **Outgoing Review** feature, YiPex will also send a one-time review code to the super-admin email address; you must enter this code to complete the payment. Contact your super-admin if you do not receive the code.
+Every outgoing payment on YiPex requires you to enter your **transaction password** before it can be submitted. The transaction password is shared across all users of the same company — set it promptly after your company completes verification and keep it secure. If your super-admin has enabled the **Outgoing Review** feature, YiPex will also send a one-time verification code to the super-admin email address; you must enter this code to complete the payment. Contact your super-admin if you do not receive the code.
 </Note>

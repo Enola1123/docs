@@ -1,0 +1,52 @@
+---
+title: "Receive Fiat Currency Payments via YiPex"
+sidebarTitle: "Fiat Collection"
+description: "Generate a bank transfer collection request in USD or other fiat currencies using a YiPex-issued global or local receiving account."
+---
+
+Fiat Collection lets you receive USD or other supported fiat currencies via bank transfer from buyers anywhere in the world. YiPex provides both global receiving accounts (for SWIFT transfers) and local receiving accounts (settled through in-country payment rails), giving you the flexibility to match whatever method your payer prefers.
+
+<Note>
+  YiPex provides trade financial services exclusively to entities that are **not** incorporated in mainland China or the United States. Screenshots in this guide are from the YiPex test environment; actual product features and data may differ.
+</Note>
+
+## Prerequisites
+
+Before you can issue a fiat collection request, two conditions must be met:
+
+1. **Enterprise verification** must be approved.
+2. You must have **at least one approved payment account**. See [Payment Accounts](/receiving/payment-accounts) for how to apply.
+
+## Steps
+
+<Steps>
+  <Step title="Open the Collect dialog">
+    Click **Collect** on your YiPex dashboard. In the dialog that appears, select **Fiat Collection**.
+  </Step>
+  <Step title="Select payment method and account">
+    Choose the **payment method** (SWIFT or local), **receiving currency**, **bank**, and **account number** from the accounts you have already had approved. Only active, approved payment accounts appear in this list.
+  </Step>
+  <Step title="Enter the payer's email (optional)">
+    Optionally enter the payer's email address. If provided, YiPex will automatically email the full collection instructions to that address.
+  </Step>
+  <Step title="Confirm collection info">
+    Click **Next – Confirm Collection Info**, review all details on the confirmation screen, and submit the request.
+  </Step>
+  <Step title="Share the collection details with your payer">
+    YiPex generates the full collection information, including: account holder name, receiving bank, bank address, SWIFT code, account number, currency, and jurisdiction. If you entered the payer's email in step 3, YiPex has already sent this information to them. Otherwise, copy and forward the details manually.
+  </Step>
+</Steps>
+
+## Delivery Time
+
+After the payer initiates their bank transfer, funds typically arrive within **1–3 business days**, depending on the payer's bank and the transfer method used.
+
+<Info>
+  Collection info is **permanent and reusable** — once generated for a given account, you do not need to create a new collection request for repeat payments from the same payer. Simply share the same bank details again.
+</Info>
+
+<Tip>
+  When forwarding bank details to your payer, remind them to:
+  - Transfer in the **correct currency** specified in the collection info.
+  - Double-check the **SWIFT code** if they are sending via an international wire — an incorrect SWIFT code will cause the payment to be rejected or delayed.
+</Tip>

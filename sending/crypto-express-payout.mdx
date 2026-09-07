@@ -1,0 +1,62 @@
+---
+title: "Crypto Express Payout: Direct Settlement to Fiat"
+sidebarTitle: "Express Payout"
+description: "Convert USDT or USDC and pay out directly to a fiat bank account in one step — available to eligible YiPex merchants only."
+---
+
+Crypto Express Payout lets eligible merchants convert USDT or USDC and deliver the equivalent fiat amount directly to a bank account — all in a single, streamlined operation. There is no need to first move funds into your fiat wallet and then initiate a separate payment; the conversion and payout happen together, with a live rate locked at confirmation time.
+
+<Note>
+Crypto Express Payout is available **only to merchants who have been granted access by YiPex**. If your account has this feature enabled, a **Crypto Express Payout** entry button will appear on your dashboard. Contact the YiPex team if you wish to apply for access.
+</Note>
+
+<Note>
+YiPex provides its trade settlement services exclusively to non-mainland-China and non-US entities. Screenshots in this guide reflect test-environment data; always refer to the live product for exact details.
+</Note>
+
+## Prerequisites
+
+You must have at least one approved **Fiat Recipient** or **Withdrawal Account** saved in Recipient Management before you can initiate a Crypto Express Payout.
+
+## Add a Recipient
+
+Crypto Express Payout uses the same recipient types as Global Payment and Withdrawal:
+
+- **Fiat Recipient** — use this for a third-party supplier or partner bank account. See [Global Payment → Add a Fiat Recipient](/sending/global-payment#add-a-fiat-recipient) for setup steps.
+- **Withdrawal Account** — use this for your own company's same-name bank account. See [Withdrawal → Add a Withdrawal Account](/sending/withdrawal#add-a-withdrawal-account) for setup steps.
+
+<Note>
+YiPex does **not** review fiat recipients or withdrawal accounts at the time of submission. Review occurs when you initiate the payout — not at setup.
+</Note>
+
+## Make a Crypto Express Payout
+
+<Steps>
+  <Step title="Open Crypto Express Payout">
+    Click **Crypto Express Payout** on your dashboard to open the payout window.
+  </Step>
+  <Step title="Select currencies">
+    Choose the **order currency** (the stablecoin you are paying out from — USDT or USDC) and the **target fiat currency** you want the recipient to receive.
+  </Step>
+  <Step title="Enter payout details">
+    Enter the **payout amount** and select the **target bank account** from your saved recipients.
+  </Step>
+  <Step title="Review and continue">
+    Verify that all details — currencies, amount, and destination account — are correct, then click **Next**.
+  </Step>
+  <Step title="Enter your transaction password">
+    When prompted, enter your **transaction password** to authenticate the operation. If your super-admin has enabled Outgoing Review, also enter the review code sent to the super-admin email.
+  </Step>
+  <Step title="Lock the rate">
+    Follow the price-lock / quote step. YiPex displays a live exchange rate with a countdown timer. Review the locked rate and the final settlement amounts carefully.
+  </Step>
+  <Step title="Confirm to initiate">
+    Click **Confirm** before the countdown expires to initiate the payout at the locked rate.
+  </Step>
+</Steps>
+
+YiPex sends an email notification to the relevant addresses once the payout is initiated. You can also monitor the status in **Recent Transactions** on the dashboard or under **Crypto Wallet Ledger**.
+
+<Info>
+Fees for Crypto Express Payout vary by network and are deducted from your crypto wallet balance. Review the fee shown during the quote step before confirming.
+</Info>

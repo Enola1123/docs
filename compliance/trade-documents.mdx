@@ -1,0 +1,100 @@
+---
+title: "Trade Background Documents for AML Compliance"
+sidebarTitle: "Trade Documents"
+description: "Create and manage collection orders and payment orders to document trade transactions as AML compliance evidence for all fund flows on YiPex."
+---
+
+YiPex requires trade background documents as compliance evidence for every fund flow on the platform. These documents link incoming and outgoing payments to real underlying trade transactions and are reviewed as part of YiPex's AML process. This page explains how to create and manage the two document types: **Collection Orders** (for sellers receiving funds) and **Payment Orders** (for buyers paying funds).
+
+## Collection Orders
+
+A Collection Order is created by the seller — the party expecting to receive funds. It captures the commercial details of the trade, logistics information, and supporting attachments.
+
+### Create a Collection Order
+
+<Steps>
+  <Step title="Start a new Collection Order">
+    Go to **Trade Background Documents**, click **New** in the top-right corner, and select **New Collection Order**.
+  </Step>
+  <Step title="Add product information">
+    Select the order currency, then add one or more products. For each product, fill in:
+    - **Product type**
+    - **Product name** (must be at least 3 characters)
+    - **Quantity**, **unit**, and **unit price**
+    - **Notes** (optional)
+
+    Click **Add Item** to include additional products. When all products are entered, click **Next**.
+  </Step>
+  <Step title="Fill in order, logistics, and document details">
+    Enter the **buyer (payer) company name** — this must match exactly the payer name shown on the PI, contract, or bill of lading in your attachments. Then complete the logistics information, counterparty details, and upload the required order attachments.
+
+    **Shipped orders** require:
+    - Contract or Proforma Invoice (PI)
+    - International logistics bill of lading
+
+    **Unshipped orders** require:
+    - Contract or Proforma Invoice (PI)
+    - Negotiation records with the buyer
+
+    Finally, select whether mainland China settlement (结汇) is needed:
+
+    - **No** — funds associated with this order cannot be settled to mainland China accounts.
+    - **Yes** — settlement to a mainland China corporate account, legal representative, a shareholder holding 25% or more equity, or a director's mainland China personal account is permitted. When selecting "Yes", the origin port on the logistics documents must be located within mainland China.
+  </Step>
+  <Step title="Review and submit">
+    Click **Next** to see a complete summary of the order. Review all details carefully to ensure the information is accurate and consistent with your uploaded documents. When you are satisfied, click **Submit** to create the order.
+  </Step>
+</Steps>
+
+### Supplement Logistics for Unshipped Orders
+
+If you selected "Unshipped" when creating the order, you must supplement the logistics information after the goods ship. **Logistics must be supplemented within 180 days** of the order creation date.
+
+When the order's logistics status shows **Pending Shipment**, an action button labelled **Supplement Logistics** appears in the order's action column. Click it, complete the logistics form, and click **Save**.
+
+---
+
+## Payment Orders
+
+<Note>
+  Payment orders are designed for B2B buyers who cannot supply their own receiving documentation. When you create a payment order, your registered company acts as the buyer in the trade documentation. Use this feature carefully — a self-created payment order is valid **only** as AML evidence for fiat wallet deposits; it cannot initiate a collection or payment by itself.
+</Note>
+
+<Note>
+  If another YiPex user creates a collection order and specifies your login email and company as the counterparty, that order also appears on this page. You can view its details, obtain the receiving address, pay it, or supplement its logistics information.
+</Note>
+
+### Create a Payment Order
+
+The creation flow mirrors the collection order process:
+
+1. Click **New** → **New Payment Order**.
+2. Fill in all product information (same fields as a collection order) → click **Next**.
+3. Enter the order party, logistics, and document information, and upload supporting attachments. Ensure everything you enter is consistent with the uploaded evidence — any discrepancy will require correction during the fiat wallet deposit review. Click **Next**.
+4. Review the completed order → click **Submit**.
+
+### Supplement Logistics for Unshipped Payment Orders
+
+If the logistics status for a payment order is **Pending Shipment**, click **Supplement Logistics** in the action column, complete the form, and click **Save**. As with collection orders, logistics must be supplemented within 180 days.
+
+---
+
+## Managing Trade Documents
+
+From the Trade Background Documents page you can search and filter all records by **order number**, **material type**, **logistics status**, or **currency**.
+
+For each record in the list, the action column provides three operations:
+
+| Action | Description |
+|---|---|
+| **View** | Open the full order detail. |
+| **Add Supplement** | Attach additional supporting materials to an existing order. |
+| **Void** | Permanently cancel the order record. |
+
+<Warning>
+  Voided orders cannot be recovered. Only void a record when you are certain it is no longer needed.
+</Warning>
+
+<Note>
+  YiPex provides its international trade settlement services exclusively to entities and individuals who are neither mainland China residents/entities nor US persons. Screenshots in this guide are taken from the YiPex test environment; the live product may differ in appearance.
+</Note>

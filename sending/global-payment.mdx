@@ -1,0 +1,83 @@
+---
+title: "Make Global Fiat Payments Through YiPex"
+sidebarTitle: "Global Payment"
+description: "Send USD or CNH to any bank worldwide from your YiPex fiat wallet via SWIFT or faster local payment networks."
+---
+
+Global Payment lets you send USD or CNH from your YiPex fiat wallet to recipients at virtually any bank in the world. Payments route over SWIFT or, where available, over YiPex's local partner networks — which are typically faster and carry lower fees than SWIFT. Use this method whenever you need to pay a supplier, contractor, or partner who holds a fiat bank account outside your own company.
+
+<Note>
+YiPex provides its trade settlement services exclusively to non-mainland-China and non-US entities. Screenshots in this guide reflect test-environment data; always refer to the live product for exact details.
+</Note>
+
+## Supported Payment Networks
+
+**Local network** (generally faster and lower fees than SWIFT) is available for recipients in the following countries and regions:
+
+> Australia, Poland, Germany, France, Finland, Luxembourg, Switzerland, Spain, Sweden, Philippines, Malaysia, Thailand, Singapore, South Korea, Canada, United States, Japan, India, Indonesia, United Kingdom, Vietnam, Hong Kong SAR
+
+**SWIFT** is available for recipients worldwide. Delivery speed depends on SWIFT's own processing time and any intermediary banks involved.
+
+## Add a Fiat Recipient
+
+<Steps>
+  <Step title="Open Recipient Management">
+    Click **Personal Center** in the navigation menu, then select **Recipient Management** from the sub-menu.
+  </Step>
+  <Step title="Start a new recipient">
+    Click **New Recipient** in the top-right corner.
+  </Step>
+  <Step title="Select the recipient type">
+    Choose **Fiat Recipient** on the New Recipient page.
+  </Step>
+  <Step title="Enter account details">
+    Follow the system prompts to enter the recipient's bank account information (account holder name, account number, bank name, SWIFT/BIC code, and any other required fields). Confirm the details are correct, then click **Submit**.
+  </Step>
+</Steps>
+
+<Note>
+YiPex does **not** review the fiat recipient immediately after submission. The review takes place at the time you initiate a payment to that recipient — not at setup.
+</Note>
+
+## Make a Global Payment
+
+<Steps>
+  <Step title="Open the payment panel">
+    Click **Pay** on the dashboard, or click **Transfer Out** beneath the relevant fiat currency balance in your fiat wallet.
+  </Step>
+  <Step title="Select wallet and method">
+    Set **Payment Wallet** to **Fiat Wallet** and **Payment Method** to **Global Payment**.
+  </Step>
+  <Step title="Select the recipient">
+    Use the drop-down to choose a saved recipient. The account number and collection currency are filled in automatically.
+  </Step>
+  <Step title="Enter payment details">
+    Fill in the **payment currency**, **payment amount**, and **payment type** (SWIFT or local). Then click **Confirm**.
+  </Step>
+  <Step title="Authenticate">
+    Enter your transaction password when prompted. If your super-admin has enabled Outgoing Review, also enter the review code sent to the super-admin email.
+  </Step>
+  <Step title="Payment enters review">
+    YiPex reviews the payment before releasing funds. If additional AML documentation is required, the system will prompt you to supply it. Track progress in **Recent Transactions** or **Fiat Wallet Ledger**.
+  </Step>
+</Steps>
+
+YiPex sends an email notification once the payment status updates. You can also check the payment status at any time under **Fiat Wallet Ledger**.
+
+## Fixed Payment Amount vs Fixed Collection Amount
+
+<Info>
+**This distinction only applies to cross-currency global payments.** For same-currency payments or FX settlement (结汇), both options produce the same result — choose either.
+
+**① FX Settlement (结汇)** — The fee is **included** in the amount you enter, calculated on the actual payment amount.
+- Example (0.1% fee rate): enter 10,010.01 → fee deducted 10.01 → net amount settled 10,000.
+
+**② Global Payment** — The fee is **not included** in the amount you enter; it is deducted separately from your wallet balance.
+- Example (0.1% fee rate): enter 10,000 → recipient receives 10,000 → fee of 10 deducted separately from your balance.
+
+**Same-currency payment:** Fixed Payment Amount and Fixed Collection Amount are identical — choose either.
+
+**Cross-currency payment:**
+- **Fixed Payment Amount** — the amount you enter is denominated in your payment currency.
+- **Fixed Collection Amount** — the amount you enter is denominated in the recipient's collection currency.
+</Info>

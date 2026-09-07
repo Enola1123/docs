@@ -1,72 +1,72 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "theme": "almond",
+  "name": "YiPex",
+  "favicon": "https://icons.duckduckgo.com/ip3/yipex.gitbook.io.ico",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "primary": "#346ddb"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Open Platform",
+      "href": "https://app.yipex.tech/merchant/#/login"
     }
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "User Guide",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "getting-started/registration",
+              "getting-started/login",
+              "getting-started/verification"
+            ]
+          },
+          {
+            "group": "Receiving Funds",
+            "pages": [
+              "receiving/overview",
+              "receiving/crypto-payment",
+              "receiving/fiat-payment",
+              "receiving/deposit",
+              "receiving/payment-accounts"
+            ]
+          },
+          {
+            "group": "Sending Funds",
+            "pages": [
+              "sending/overview",
+              "sending/stablecoin-payment",
+              "sending/global-payment",
+              "sending/withdrawal",
+              "sending/crypto-express-payout"
+            ]
+          },
+          {
+            "group": "Wallets & Transactions",
+            "pages": [
+              "wallets/crypto-wallet",
+              "wallets/fiat-wallet",
+              "wallets/currency-exchange",
+              "wallets/transfer-to-fiat"
+            ]
+          },
+          {
+            "group": "Compliance & Settings",
+            "pages": [
+              "compliance/trade-documents",
+              "compliance/address-verification",
+              "account/personal-center",
+              "account/security"
+            ]
+          }
+        ]
+      }
     ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }

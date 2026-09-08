@@ -1,72 +1,48 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
+  "theme": "mint",
   "name": "YiPex",
-  "favicon": "https://icons.duckduckgo.com/ip3/yipex.gitbook.io.ico",
+  "description": "YiPex 操作指引",
   "colors": {
-    "primary": "#346ddb"
-  },
-  "navbar": {
-    "primary": {
-      "type": "button",
-      "label": "Open Platform",
-      "href": "https://app.yipex.tech/merchant/#/login"
-    }
+    "primary": "#1677ff"
   },
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "User Guide",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "getting-started/registration",
-              "getting-started/login",
-              "getting-started/verification"
-            ]
-          },
-          {
-            "group": "Receiving Funds",
-            "pages": [
-              "receiving/overview",
-              "receiving/crypto-payment",
-              "receiving/fiat-payment",
-              "receiving/deposit",
-              "receiving/payment-accounts"
-            ]
-          },
-          {
-            "group": "Sending Funds",
-            "pages": [
-              "sending/overview",
-              "sending/stablecoin-payment",
-              "sending/global-payment",
-              "sending/withdrawal",
-              "sending/crypto-express-payout"
-            ]
-          },
-          {
-            "group": "Wallets & Transactions",
-            "pages": [
-              "wallets/crypto-wallet",
-              "wallets/fiat-wallet",
-              "wallets/currency-exchange",
-              "wallets/transfer-to-fiat"
-            ]
-          },
-          {
-            "group": "Compliance & Settings",
-            "pages": [
-              "compliance/trade-documents",
-              "compliance/address-verification",
-              "account/personal-center",
-              "account/security"
-            ]
-          }
+        "group": "首页",
+        "pages": [
+          "index"
+        ]
+      },
+      {
+        "group": "PC端",
+        "pages": [
+          "pc-duan/zhu-ce",
+          "pc-duan/deng-lu",
+          "pc-duan/ren-zheng",
+          "pc-duan/shou-kuan",
+          "pc-duan/chong-zhi",
+          "pc-duan/zhuan-ru-fa-bi-qian-bao",
+          "pc-duan/fu-kuan",
+          "pc-duan/huan-hui",
+          "pc-duan/shu-bi-kuai-jie-chu-jin",
+          "pc-duan/mao-yi-bei-jing-cai-liao",
+          "pc-duan/shu-bi-qian-bao-liu-shui",
+          "pc-duan/fa-bi-qian-bao-liu-shui",
+          "pc-duan/shou-kuan-zhang-hu",
+          "pc-duan/ge-ren-zhong-xin",
+          "pc-duan/qu-kuai-lian-di-zhi-jiao-yan"
+        ]
+      },
+      {
+        "group": "APP端",
+        "pages": [
+          "app-duan/wan-shan-zhong"
         ]
       }
     ]
+  },
+  "metadata": {
+    "timestamp": true
   }
 }
